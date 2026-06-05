@@ -1,0 +1,49 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.37216.2 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrbitEye.Api", "OrbitEye.Api\OrbitEye.Api.csproj", "{D868C345-8C02-4083-9FD2-AAF3CBBF52A6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrbitEye.Domain", "OrbitEye.Domain\OrbitEye.Domain.csproj", "{06404F6F-A057-45BF-A935-4135BCEE5F99}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrbitEye.Application", "OrbitEye.Application\OrbitEye.Application.csproj", "{A04D80BA-4E56-4F41-ADFA-FCF0651DB1CD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrbitEye.Infrastructure", "OrbitEye.Infrastructure\OrbitEye.Infrastructure.csproj", "{9D1A9B01-329F-4089-84E2-BA95036EEC25}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrbitEye.Tests", "OrbitEye.Tests\OrbitEye.Tests.csproj", "{39505957-4ADF-4CE5-AA03-72EF5B2EDCFC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D868C345-8C02-4083-9FD2-AAF3CBBF52A6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D868C345-8C02-4083-9FD2-AAF3CBBF52A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D868C345-8C02-4083-9FD2-AAF3CBBF52A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D868C345-8C02-4083-9FD2-AAF3CBBF52A6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{06404F6F-A057-45BF-A935-4135BCEE5F99}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{06404F6F-A057-45BF-A935-4135BCEE5F99}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{06404F6F-A057-45BF-A935-4135BCEE5F99}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{06404F6F-A057-45BF-A935-4135BCEE5F99}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A04D80BA-4E56-4F41-ADFA-FCF0651DB1CD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A04D80BA-4E56-4F41-ADFA-FCF0651DB1CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A04D80BA-4E56-4F41-ADFA-FCF0651DB1CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A04D80BA-4E56-4F41-ADFA-FCF0651DB1CD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9D1A9B01-329F-4089-84E2-BA95036EEC25}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9D1A9B01-329F-4089-84E2-BA95036EEC25}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9D1A9B01-329F-4089-84E2-BA95036EEC25}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9D1A9B01-329F-4089-84E2-BA95036EEC25}.Release|Any CPU.Build.0 = Release|Any CPU
+		{39505957-4ADF-4CE5-AA03-72EF5B2EDCFC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{39505957-4ADF-4CE5-AA03-72EF5B2EDCFC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{39505957-4ADF-4CE5-AA03-72EF5B2EDCFC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{39505957-4ADF-4CE5-AA03-72EF5B2EDCFC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1CC46BAC-6D9C-4EE5-96CA-06B0F3F0CCFE}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,6 @@
+@OrbitEye.Api_HostAddress = http://localhost:5033
+
+GET {{OrbitEye.Api_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
