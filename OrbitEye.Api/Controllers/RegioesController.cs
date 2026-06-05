@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using OrbitEye.Application.Interfaces;
 using OrbitEye.Domain.Entities;
 
@@ -6,6 +7,7 @@ namespace OrbitEye.Api.Controllers;
 
 [ApiController]
 [Route("api/[controller]")]
+[Authorize]
 public class RegioesController : ControllerBase
 {
     private readonly IRegiaoRepository _regiaoRepository;
