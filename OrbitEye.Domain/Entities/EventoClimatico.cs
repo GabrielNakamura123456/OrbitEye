@@ -12,5 +12,5 @@ public class EventoClimatico
 
     public int RegiaoId { get; set; }
 
-    public Regiao Regiao { get; set; } = null!;
+    public Regiao? Regiao { get; set; }
 }
