@@ -2,6 +2,7 @@ using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
+using OrbitEye.Api.Middlewares;
 using OrbitEye.Application.Interfaces;
 using OrbitEye.Infrastructure.Data;
 using OrbitEye.Infrastructure.Repositories;
@@ -76,6 +77,8 @@ builder.Services.AddSwaggerGen(options =>
 });
 
 var app = builder.Build();
+
+app.UseMiddleware<ExceptionMiddleware>();
 
 if (app.Environment.IsDevelopment())
 {
