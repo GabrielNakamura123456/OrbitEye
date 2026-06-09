@@ -347,4 +347,20 @@ FIAP
 
 # Objetivo
 
-Demonstrar a construção de uma API REST utilizando ASP.NET Core, Oracle Database, JWT Authentication, Swagger, Health Checks e Testes Automatizados, aplicando boas práticas de desenvolvimento e arquitetura de software.# OrbitEye
+Demonstrar a construção de uma API REST utilizando ASP.NET Core, Oracle Database, JWT Authentication, Swagger, Health Checks e Testes 
+
+# Diagramas
+
+## Diagrama de Arquitetura
+
+```mermaid
+flowchart TD
+    A[Cliente / Swagger] --> B[OrbitEye.Api]
+    B --> C[Controllers]
+    C --> D[Interfaces - Application]
+    D --> E[Repositories - Infrastructure]
+    E --> F[OrbitEyeDbContext]
+    F --> G[(Oracle Database)]
+
+    B --> H[JWT Authentication]
+    B --> I[Health Check]Automatizados, aplicando boas práticas de desenvolvimento e arquitetura de software.# OrbitEye
