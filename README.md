@@ -573,6 +573,9 @@ Teste → Executar Todos os Testes
 
 ---
 
+# Link do video 
+https://www.youtube.com/watch?v=nrwI3wgipj8
+
 # Disciplina
 
 Advanced Business Development with .NET
