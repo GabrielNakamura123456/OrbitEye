@@ -351,16 +351,68 @@ Demonstrar a construção de uma API REST utilizando ASP.NET Core, Oracle Databa
 
 # Diagramas
 
+# Diagramas
+
 ## Diagrama de Arquitetura
 
 ```mermaid
 flowchart TD
     A[Cliente / Swagger] --> B[OrbitEye.Api]
     B --> C[Controllers]
-    C --> D[Interfaces - Application]
-    D --> E[Repositories - Infrastructure]
-    E --> F[OrbitEyeDbContext]
-    F --> G[(Oracle Database)]
+    C --> D[Application]
+    D --> E[Infrastructure]
+    E --> F[Oracle Database]
 
-    B --> H[JWT Authentication]
-    B --> I[Health Check]Automatizados, aplicando boas práticas de desenvolvimento e arquitetura de software.# OrbitEye
+    B --> G[JWT Authentication]
+    B --> H[Health Check]
+```
+
+## Diagrama de Classes
+
+```mermaid
+classDiagram
+
+class Usuario
+class Regiao
+class Alerta
+class EventoClimatico
+class PrevisaoIA
+
+Regiao "1" --> "*" Alerta
+Regiao "1" --> "*" EventoClimatico
+Regiao "1" --> "*" PrevisaoIA
+```
+
+## Diagrama MER
+
+```mermaid
+erDiagram
+
+REGIAO ||--o{ ALERTA : possui
+REGIAO ||--o{ EVENTOCLIMATICO : registra
+REGIAO ||--o{ PREVISAOIA : gera
+
+REGIAO {
+    int Id
+    string Nome
+    string Estado
+}
+
+ALERTA {
+    int Id
+    string Mensagem
+    string Nivel
+}
+
+EVENTOCLIMATICO {
+    int Id
+    string TipoEvento
+    string Descricao
+}
+
+PREVISAOIA {
+    int Id
+    double ProbabilidadeRisco
+    string NivelPrevisto
+}
+```
