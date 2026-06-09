@@ -392,6 +392,135 @@ dotnet run
 
 ou executar diretamente pelo Visual Studio.
 
+# Exemplos de Testes da API
+
+## Login
+
+### Request
+
+```http
+POST /api/Auth/login
+```
+
+```json
+{
+  "email": "admin@orbiteye.com",
+  "senha": "123456"
+}
+```
+
+### Response
+
+```json
+{
+  "token": "eyJhbGciOiJIUzI1Ni..."
+}
+```
+
+---
+
+## Criar Região
+
+### Request
+
+```http
+POST /api/Regioes
+```
+
+```json
+{
+  "nome": "São Paulo",
+  "estado": "SP",
+  "latitude": -23.5505,
+  "longitude": -46.6333,
+  "nivelRisco": "ALTO"
+}
+```
+
+### Response
+
+```json
+{
+  "id": 1,
+  "nome": "São Paulo",
+  "estado": "SP",
+  "latitude": -23.5505,
+  "longitude": -46.6333,
+  "nivelRisco": "ALTO"
+}
+```
+
+---
+
+## Buscar Região
+
+### Request
+
+```http
+GET /api/Regioes/1
+```
+
+### Response
+
+```json
+{
+  "id": 1,
+  "nome": "São Paulo",
+  "estado": "SP",
+  "latitude": -23.5505,
+  "longitude": -46.6333,
+  "nivelRisco": "ALTO"
+}
+```
+
+---
+
+## Atualizar Região
+
+### Request
+
+```http
+PUT /api/Regioes/1
+```
+
+```json
+{
+  "nome": "São Paulo",
+  "estado": "SP",
+  "latitude": -23.5505,
+  "longitude": -46.6333,
+  "nivelRisco": "CRITICO"
+}
+```
+
+### Response
+
+```json
+{
+  "id": 1,
+  "nome": "São Paulo",
+  "estado": "SP",
+  "latitude": -23.5505,
+  "longitude": -46.6333,
+  "nivelRisco": "CRITICO"
+}
+```
+
+---
+
+## Excluir Região
+
+### Request
+
+```http
+DELETE /api/Regioes/1
+```
+
+### Response
+
+```text
+204 No Content
+```
 ---
 
 # Testes Automatizados
